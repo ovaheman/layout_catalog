@@ -18,14 +18,11 @@ div {
   display: block;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .grid {
   --column-count: 1;
+
   display: grid;
+  justify-content: center;
   padding: 50px 40px;
   gap: 46px 48px;
 

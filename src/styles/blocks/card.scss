@@ -11,7 +11,7 @@
   transition-duration: 300ms;
 
   &__photo {
-    display: block;
+    display: flex;
     width: 160px;
     height: 134px;
     margin: 0 auto 40px;
@@ -30,8 +30,6 @@
   }
 
   &__code {
-    align-self: start;
-
     margin-bottom: 16px;
 
     font-weight: 400;
@@ -41,9 +39,10 @@
 
   &__rate {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    font-size: 10px;
   }
 
   &__rate-review {
@@ -54,7 +53,6 @@
 
   &__price {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
   }
@@ -68,13 +66,15 @@
   }
 
   &__price-value {
+    // display: flex;
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     color: $text-accent-color;
-    text-align: right;
-    letter-spacing: 0%;
-    vertical-align: bottom;
+
+    // text-align: right;
+    // letter-spacing: 0%;
+    // vertical-align: bottom;
   }
 
   &__button {
@@ -83,6 +83,7 @@
     justify-content: center;
 
     box-sizing: border-box;
+    width: 166px;
     height: 40px;
     border: 1px solid $main-color;
     border-radius: 5px;
